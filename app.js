@@ -6,7 +6,7 @@ async function getPosts() {
   ).then((response) => response.json());
 
   const postsUser1 = posts.filter((post) => post.userId === 1);
-  const first3posts = posts.slice(0, 3);
+  const first3posts = postsUser1.slice(0, 3);
   console.log(first3posts);
 
   first3posts.forEach((post) => {
