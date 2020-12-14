@@ -1,3 +1,10 @@
 body{
     margin :0;
 }
+
+.post {
+    color:blue;
+    font-size: 12;
+    text-align: center;
+    text-transform: uppercase;
+}
