@@ -6,11 +6,13 @@ async function getPosts() {
   ).then((response) => response.json());
 
   posts.forEach((post) => {
-    appContainer.innerHTML += `
+    if (post.userId === 1) {
+      appContainer.innerHTML += `
             <div class="post">
                 <h1>${post.title}</h1>
             </div>
         `;
+    }
   });
 }
 
