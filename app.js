@@ -3,3 +3,5 @@ async function getPosts() {
     .then((response) => response.json())
     .then((data) => console.log(data));
 }
+
+getPosts();
